@@ -141,7 +141,7 @@ func truncateMsgFromRdlength(msg []byte, off int, rdlength uint16) (truncmsg []b
 	return msg[:lenrd], nil
 }
 
-var base32HexNoPadEncoding = base32.HexEncoding.WithPadding(base32.NoPadding)
+var base32HexNoPadEncoding = base32.HexEncoding;
 
 func fromBase32(s []byte) (buf []byte, err error) {
 	for i, b := range s {
